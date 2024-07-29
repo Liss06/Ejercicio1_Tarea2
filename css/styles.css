@@ -1,0 +1,159 @@
+:root{
+    --AzulOsc: #2A2D63;
+    --AzulCel: #13F9CF ;
+    --Oscuro: #000;
+    --Azul: #096DD1;
+}
+
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+*,/*todas las subclases de manera universal*/
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+.titulo{
+    text-align: justify;
+}
+.titulo span{
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+@media(min-width: 768px) {
+    .titulo{
+        text-align: center;
+        margin-right: 72rem;
+    }
+}
+
+.nav-bg{
+    background-color: var(--AzulOsc);
+}
+.navegacion-principal{
+    display: flex; /*modificar de diferente manera*/
+    flex-direction: row;
+    justify-content: space-between;
+}
+.der{
+    margin-top: 1rem;
+}
+
+.der .bus{
+    height: 3rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.der .bot{
+    height: 3rem;
+    border: 2px solid var(--Azul);
+    color: var(--Azul);
+    background-color: var(--AzulOsc);
+    box-shadow: 8px -1px 5px 0px rgba(9,109,209,0.91);
+    font-weight: bolder;
+}
+
+.der .bot:hover{
+    color: var(--Oscuro);
+    background-color: var(--AzulCel);
+    box-shadow: none;
+}
+
+.der, .izq{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    display: block;
+    padding: 1rem;
+}
+.tabla{
+    width: 430px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+@media(min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .tabla{
+        width: 500px;
+        margin: 0 auto;
+        margin-left: 20rem;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 50% 50% 50%;
+        height: 100%;
+        row-gap: 3rem;
+    }
+
+    .hero:nth-child(1){
+        height: 105%;
+    }
+    .hero:nth-child(2){
+        height: 110%;
+    }
+
+    .hero:nth-child(3){
+        height: 115%;
+    }
+    .hero:nth-child(5){
+        margin-top: 3rem;
+    }
+
+    .hero:nth-child(6){
+        margin-top: 6rem;
+    }
+
+    .hero:nth-child(4), .hero:nth-child(5),.hero:nth-child(6){
+        border-top: none;
+    
+    }
+    
+}
+
+Img{
+    width: 200px;
+    height: 300px;
+}
+
+.hero p{
+    text-align: justify;
+    padding: 2rem;
+}
+
+.hero{
+    margin: 0 auto;
+    border: 1px solid rgb(131, 129, 129);
+
+}
+
+
+.tabla .ver{
+    border: 2px solid var(--Azul);
+    color: var(--Azul);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 50%;
+    height: 25px;
+}
+
+.tabla Img{
+    padding: 2rem;
+    margin: 0 auto;
+}
